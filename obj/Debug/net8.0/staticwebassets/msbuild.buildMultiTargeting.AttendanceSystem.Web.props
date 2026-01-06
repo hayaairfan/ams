@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AttendanceSystem.Web.props" />
+</Project>
