@@ -1,0 +1,68 @@
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.deps.json
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.runtimeconfig.json
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\Attendan.B12F694A.Up2Date
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\refint\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\ref\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.deps.json
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.runtimeconfig.json
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\Attendan.B12F694A.Up2Date
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\refint\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\ref\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.deps.json
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.runtimeconfig.json
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\Attendan.B12F694A.Up2Date
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\refint\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.genruntimeconfig.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\ref\AttendanceSystem.Data.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.deps.json
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.runtimeconfig.json
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\bin\Debug\net8.0\Attendance System.Core.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.AssemblyReference.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfoInputs.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.AssemblyInfo.cs
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.csproj.CoreCompileInputs.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\Attendan.B12F694A.Up2Date
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\refint\AttendanceSystem.Data.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\AttendanceSystem.Data.genruntimeconfig.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Data\obj\Debug\net8.0\ref\AttendanceSystem.Data.dll
