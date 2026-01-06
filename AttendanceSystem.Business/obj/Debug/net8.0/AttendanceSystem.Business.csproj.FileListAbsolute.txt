@@ -1,0 +1,68 @@
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.deps.json
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfo.cs
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\Attendan.73F96D86.Up2Date
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\refint\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\ref\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.deps.json
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfo.cs
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\Attendan.73F96D86.Up2Date
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\refint\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\universty\Smester 5\EAD\Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\ref\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.deps.json
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfo.cs
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\Attendan.73F96D86.Up2Date
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\refint\AttendanceSystem.Business.dll
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.pdb
+C:\Users\User\Desktop\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\ref\AttendanceSystem.Business.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.deps.json
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Business.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\Attendance System.Core.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\bin\Debug\net8.0\AttendanceSystem.Data.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.AssemblyReference.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfoInputs.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.AssemblyInfo.cs
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.csproj.CoreCompileInputs.cache
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\Attendan.73F96D86.Up2Date
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\refint\AttendanceSystem.Business.dll
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\AttendanceSystem.Business.pdb
+D:\downloads\Attendance System\Previous Attendance System.Core\AttendanceSystem.Business\obj\Debug\net8.0\ref\AttendanceSystem.Business.dll
