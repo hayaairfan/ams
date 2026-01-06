@@ -1,0 +1,72 @@
+﻿@model List<Timetable>
+@using AttendanceSystem.Core.Models
+
+@if (Model == null || !Model.Any())
+{
+    <div class="text-center py-5">
+        <i class="bi bi-calendar-x fs-1 text-muted"></i>
+        <h5 class="mt-3 text-muted">No timetable entries found</h5>
+    </div>
+}
+else
+{
+    <!-- Weekly Timetable Grid -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderBy(t => t.DayOfWeek).ThenBy(t => t.StartTime))
+                {
+                    <tr>
+                        <td class="fw-bold">@Enum.GetName(typeof(DayOfWeek), item.DayOfWeek)</td>
+                        <td>
+                            <span class="badge bg-success">@item.StartTime.ToString(@"hh\:mm")</span> –
+                            <span class="badge bg-danger">@item.EndTime.ToString(@"hh\:mm")</span>
+                        </td>
+                        <td class="fw-bold text-primary">@item.CourseCode</td>
+                        <td>@(string.IsNullOrEmpty(item.Room) ? "—" : item.Room)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Weekly Calendar View (Optional) -->
+    <div class="row mt-4">
+        @for (int day = 0; day <= 6; day++)
+        {
+            var dayName = Enum.GetName(typeof(DayOfWeek), day);
+            var classes = Model.Where(t => t.DayOfWeek == day).ToList();
+
+            <div class="col-md-4 mb-3">
+                <div class="card @(classes.Any() ? "border-left-success" : "")">
+                    <div class="card-header bg-light fw-bold">@dayName</div>
+                    <div class="card-body p-2">
+                        @if (classes.Any())
+                        {
+                            @foreach (var cls in classes.OrderBy(c => c.StartTime))
+                            {
+                                <div class="alert alert-info p-2 mb-2 small">
+                                    <div class="fw-bold">@cls.CourseCode</div>
+                                    <div>@cls.StartTime.ToString(@"hh\:mm") – @cls.EndTime.ToString(@"hh\:mm")</div>
+                                    <div class="text-muted">@cls.Room</div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-muted small mb-0">No classes</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

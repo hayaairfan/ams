@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Add User";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary fw-bold">
+            <i class="bi bi-person-plus me-2"></i> Add New User
+        </h2>
+        <a asp-action="ManageUsers" class="btn btn-outline-secondary px-3">
+            <i class="bi bi-arrow-left me-1"></i> Back to Users
+        </a>
+    </div>
+
+    <!-- Alerts -->
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger d-flex align-items-center mb-4">
+            <i class="bi bi-exclamation-circle me-2 fs-5"></i>
+            <div>@TempData["Error"]</div>
+        </div>
+    }
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success d-flex align-items-center mb-4">
+            <i class="bi bi-check-circle me-2 fs-5"></i>
+            <div>@TempData["Success"]</div>
+        </div>
+    }
+
+    <!-- Form Card -->
+    <div class="card border-0 shadow-sm rounded-3">
+        <div class="card-body p-4">
+            <form asp-action="AddUser" method="post">
+                @Html.AntiForgeryToken()
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">📧 Email Address</label>
+                    <input type="email" name="email" class="form-control form-control-lg" placeholder="e.g., user@school.edu" required />
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">🔒 Password</label>
+                    <input type="password" name="password" class="form-control form-control-lg" placeholder="Minimum 6 characters" minlength="6" required />
+                    <div class="form-text text-muted">Password will be hashed securely.</div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">👤 Role</label>
+                    <select name="role" class="form-select form-select-lg" required>
+                        <option value="">-- Select a role --</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a asp-action="ManageUsers" class="btn btn-outline-secondary px-4">Cancel</a>
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-person-plus me-1"></i> Create User
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

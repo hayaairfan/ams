@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<div class="container-fluid mt-4">
+    <h2 class="mb-4">
+        <i class="bi bi-person-circle"></i> Student Dashboard
+    </h2>
+    <a href="/Student/MyTimetable" class="btn btn-outline-info w-100 mb-2">
+        <i class="bi bi-calendar-week"></i> My Timetable
+    </a>
+    <div class="row">
+        <!-- Attendance Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-success h-100">
+                <div class="card-body text-center">
+                    <h1 class="display-4">
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                    </h1>
+                    <h5 class="card-title">My Attendance</h5>
+                    <p>View your daily and overall attendance status.</p>
+                    <a href="/Student/Attendance" class="btn btn-success">
+                        <i class="bi bi-eye"></i> View Attendance
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Registration -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-primary h-100">
+                <div class="card-body text-center">
+                    <h1 class="display-4">
+                        <i class="bi bi-book-half text-primary"></i>
+                    </h1>
+                    <h5 class="card-title">Course Registration</h5>
+                    <p>Enroll in available courses.</p>
+                    <a href="/Student/RegisterForCourses" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- My Report -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-info h-100">
+                <div class="card-body text-center">
+                    <h1 class="display-4">
+                        <i class="bi bi-file-earmark-bar-graph text-info"></i>
+                    </h1>
+                    <h5 class="card-title">My Report</h5>
+                    <p>View your attendance percentage per course.</p>
+                    <a href="/Student/MyReport" class="btn btn-info">
+                        <i class="bi bi-bar-chart"></i> View Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-end">
+        <a href="/Home/Logout" class="btn btn-outline-secondary">
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </a>
+    </div>
+</div>

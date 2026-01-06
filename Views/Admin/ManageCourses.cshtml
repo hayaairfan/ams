@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Manage Users";
+    ViewData["Title"] = "Manage Courses";
 }
 
 <div class="container-fluid mt-4">
@@ -13,9 +13,9 @@
     <div class="row">
         <div class="col-md-6">
             <div class="card shadow">
-                <div class="card-header bg-primary text-white">
+                <div class="card-header bg-warning text-white">
                     <h5 class="mb-0">
-                        <i class="bi bi-person-plus"></i> Add New User
+                        <i class="bi bi-journal-plus"></i> Add New Course
                     </h5>
                 </div>
                 <div class="card-body">
@@ -28,26 +28,27 @@
                         <div class="alert alert-success">@ViewBag.Success</div>
                     }
 
-                    <form method="post" asp-action="AddUser">
+                    <form method="post" asp-action="AddCourse">
                         <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" required />
+                            <label class="form-label">Course Code</label>
+                            <input type="text" name="code" class="form-control" required />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control" required />
+                            <label class="form-label">Course Title</label>
+                            <input type="text" name="title" class="form-control" required />
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Role</label>
-                            <select name="role" class="form-select" required>
-                                <option value="">Select Role</option>
-                                <option value="Admin">Admin</option>
-                                <option value="Teacher">Teacher</option>
-                                <option value="Student">Student</option>
+                            <label class="form-label">Assign Teacher</label>
+                            <select name="teacherEmail" class="form-select" required>
+                                <option value="">Select Teacher</option>
+                                @foreach (var email in ViewBag.Teachers as List<string>)
+                                {
+                                    <option value="@email">@email</option>
+                                }
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            <i class="bi bi-save"></i> Add User
+                        <button type="submit" class="btn btn-warning w-100">
+                            <i class="bi bi-save"></i> Add Course
                         </button>
                     </form>
                 </div>
@@ -58,15 +59,14 @@
             <div class="card shadow">
                 <div class="card-header bg-info text-white">
                     <h5 class="mb-0">
-                        <i class="bi bi-people"></i> User Management Tips
+                        <i class="bi bi-info-circle"></i> Course Guidelines
                     </h5>
                 </div>
                 <div class="card-body">
                     <ul>
-                        <li>Use strong passwords (e.g., <code>Admin@123!</code>)</li>
-                        <li>Admins can manage all users</li>
-                        <li>Teachers can mark attendance for assigned courses</li>
-                        <li>Students can view their own attendance</li>
+                        <li>Course code must be unique (e.g., <code>CS101</code>)</li>
+                        <li>Only registered teachers can be assigned</li>
+                        <li>Students enroll in courses, not sections</li>
                     </ul>
                 </div>
             </div>

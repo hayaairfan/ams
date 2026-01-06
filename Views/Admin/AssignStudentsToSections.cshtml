@@ -1,0 +1,133 @@
+﻿@using AttendanceSystem.Core.Models
+@{
+    ViewData["Title"] = "Assign Students to Sections";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Admin/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-purple text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-person-badge"></i> Assign Student to Section
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success">@ViewBag.Success</div>
+                    }
+
+                    <form method="post">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Student Email</label>
+                            <select name="studentEmail" class="form-select" required>
+                                <option value="">Select Student</option>
+                                @foreach (var email in ViewBag.Students as List<string>)
+                                {
+                                    <option value="@email">@email</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Section</label>
+                            <select name="sectionName" class="form-select" required>
+                                <option value="">Select Section</option>
+                                @{
+                                    var sectionList = ViewBag.Sections as List<AttendanceSystem.Core.Models.Section>;
+                                    if (sectionList != null)
+                                    {
+                                        foreach (var sec in sectionList)
+                                        {
+                                            <option value="@sec.Name|@sec.Session">@sec.Name (@sec.Session)</option>
+                                        }
+                                    }
+                                }
+                            </select>
+                        </div>
+
+                        <!-- Hidden field for session -->
+                        <input type="hidden" name="session" id="selectedSession" />
+
+                        <button type="submit" class="btn btn-purple w-100 mt-3">
+                            <i class="bi bi-check-circle"></i> Assign to Section
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-info-circle"></i> How It Works
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Assign students to sections (e.g., <code>CS101-Spring2025</code>)</li>
+                        <li>Sections help group students for bulk operations</li>
+                        <li>Each student can be in multiple sections</li>
+                        <li>Attendance can later be marked by section (optional enhancement)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-purple {
+        background: linear-gradient(135deg, #6f42c1, #5a32a3);
+    }
+
+    .btn-purple {
+        background: linear-gradient(135deg, #6f42c1, #5a32a3);
+        border: none;
+        color: white;
+    }
+
+        .btn-purple:hover {
+            opacity: 0.9;
+        }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sectionSelect = document.querySelector('select[name="sectionName"]');
+        const sessionInput = document.getElementById('selectedSession');
+
+        if (sectionSelect && sessionInput) {
+            sectionSelect.addEventListener('change', function () {
+                const selected = this.value;
+                if (selected) {
+                    const parts = selected.split('|');
+                    const sectionName = parts[0];
+                    const session = parts[1] || '';
+                    sessionInput.value = session;
+                } else {
+                    sessionInput.value = '';
+                }
+            });
+
+            // Trigger on page load if a section is pre-selected (e.g., after error)
+            if (sectionSelect.value) {
+                const event = new Event('change');
+                sectionSelect.dispatchEvent(event);
+            }
+        }
+    });
+</script>

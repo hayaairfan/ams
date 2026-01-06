@@ -1,0 +1,97 @@
+﻿@using AttendanceSystem.Core.Models
+@{
+    ViewData["Title"] = "Manage Timetable";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Admin/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-calendar-plus"></i> Add Timetable Entry
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success">@ViewBag.Success</div>
+                    }
+
+                    <form method="post" asp-action="AddTimetable">
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <label class="form-label fw-bold">Course</label>
+                                <select name="courseCode" class="form-select" required>
+                                    <option value="">Select Course</option>
+                                    @foreach (var course in ViewBag.Courses as List<Course>)
+                                    {
+                                        <option value="@course.Code">@course.Code - @course.Title</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Day</label>
+                                <select name="dayOfWeek" class="form-select" required>
+                                    <option value="0">Sunday</option>
+                                    <option value="1">Monday</option>
+                                    <option value="2">Tuesday</option>
+                                    <option value="3">Wednesday</option>
+                                    <option value="4">Thursday</option>
+                                    <option value="5">Friday</option>
+                                    <option value="6">Saturday</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label fw-bold">Start</label>
+                                <input type="time" name="startTime" class="form-control" required />
+                            </div>
+                            <div class="col-md-2">
+                                <label class="form-label fw-bold">End</label>
+                                <input type="time" name="endTime" class="form-control" required />
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Room (Optional)</label>
+                                <input type="text" name="room" class="form-control" placeholder="e.g., A101" />
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="bi bi-plus-circle"></i> Add Timetable
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-info-circle"></i> How It Works
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Each course can have **multiple timetable slots** (e.g., Mon 9–10, Wed 9–10)</li>
+                        <li>Attendance can **only be marked** on scheduled days</li>
+                        <li>Teachers see **only today’s classes** in "Mark Attendance"</li>
+                        <li>Duplicate time slots for the same course are **not allowed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

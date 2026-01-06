@@ -1,0 +1,119 @@
+﻿@using AttendanceSystem.Core.Models
+@model List<AttendanceReport>
+
+@{
+    ViewData["Title"] = "My Course Reports";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Teacher/Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-info text-white py-4">
+            <h3 class="mb-0 fw-bold">
+                <i class="bi bi-file-bar-graph me-2"></i> My Course Reports
+            </h3>
+        </div>
+
+        <div class="card-body p-4">
+            <!-- Filter Form -->
+            <form method="get" class="row g-3 mb-4 p-3 border rounded bg-light">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Course</label>
+                    <select name="courseCode" class="form-select">
+                        <option value="">All My Courses</option>
+                        @if (ViewBag.Courses != null)
+                        {
+                            @foreach (var code in ViewBag.Courses as List<string>)
+                            {
+                                <option value="@code" selected="@(Context.Request.Query["courseCode"] == code)">
+                                    @code
+                                </option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">From</label>
+                    <input type="date" name="startDate" class="form-control" value="@Context.Request.Query["startDate"]" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">To</label>
+                    <input type="date" name="endDate" class="form-control" value="@Context.Request.Query["endDate"]" />
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-info w-100">
+                        <i class="bi bi-filter me-1"></i> Filter
+                    </button>
+                </div>
+            </form>
+
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Student</th>
+                                <th>Course</th>
+                                <th>Total</th>
+                                <th>Present</th>
+                                <th>Late</th>
+                                <th>Absent</th>
+                                <th>Attendance %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var r in Model)
+                            {
+                                <tr>
+                                    <td>@r.StudentEmail</td>
+                                    <td><span class="badge bg-info">@r.CourseCode</span></td>
+                                    <td>@r.TotalClasses</td>
+                                    <td><span class="badge bg-success">@r.Present</span></td>
+                                    <td><span class="badge bg-warning text-dark">@r.Late</span></td>
+                                    <td><span class="badge bg-danger">@r.Absent</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="progress flex-grow-1 me-2" style="height: 10px;">
+                                                <div class="progress-bar bg-info" style="width: @(r.Percentage)%;"></div>
+                                            </div>
+                                            <span class="fw-bold">@r.Percentage%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <div class="mb-3">
+                        <i class="bi bi-file-earmark-text fs-1 text-muted"></i>
+                    </div>
+                    <h5 class="text-muted">No attendance records found</h5>
+                    <p class="text-muted">
+                        Select a course and date range to view reports.
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-gradient-info {
+        background: linear-gradient(135deg, #36b9cc, #208391);
+    }
+
+    .fs-1 {
+        font-size: 2.5rem !important;
+    }
+</style>

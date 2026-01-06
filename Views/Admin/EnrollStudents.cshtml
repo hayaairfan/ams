@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Enroll Students";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Admin/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-person-check"></i> Enroll Student in Course
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success">@ViewBag.Success</div>
+                    }
+
+                    <form method="post" asp-action="EnrollStudent">
+                        <div class="mb-3">
+                            <label class="form-label">Student Email</label>
+                            <input type="email" name="studentEmail" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Course Code</label>
+                            <input type="text" name="courseCode" class="form-control" required />
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">
+                            <i class="bi bi-save"></i> Enroll Student
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="bi bi-info-circle"></i> Enrollment Guidelines
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Student must exist in the system</li>
+                        <li>Course must exist and be assigned to a teacher</li>
+                        <li>One student can enroll in multiple courses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

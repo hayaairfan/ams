@@ -1,0 +1,69 @@
+﻿@using AttendanceSystem.Core.Models
+@{
+    ViewData["Title"] = "Register for Courses";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Student/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-header bg-success text-white">
+            <h4 class="mb-0">
+                <i class="bi bi-journal-text"></i> Register for Courses
+            </h4>
+        </div>
+        <div class="card-body">
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">@TempData["Success"]</div>
+            }
+
+            @if (ViewBag.AvailableCourses != null && ViewBag.AvailableCourses.Count > 0)
+            {
+                <form method="post" asp-action="EnrollInCourse">
+                    <div class="row g-3">
+                        @foreach (var course in ViewBag.AvailableCourses as List<Course>)
+                        {
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 border-primary">
+                                    <div class="card-header bg-light">
+                                        <h5 class="mb-0 text-primary">@course.Code</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted">@course.Title</p>
+                                        <p><strong>Teacher:</strong> @course.TeacherEmail</p>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="courseCodes" value="@course.Code" id="course_@course.Code">
+                                            <label class="form-check-label" for="course_@course.Code">
+                                                Enroll in this course
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="text-end mt-4">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-check-circle"></i> Confirm Enrollment
+                        </button>
+                    </div>
+                </form>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-journal-x" style="font-size: 4rem; color: #ccc;"></i>
+                    <h5 class="mt-3 text-muted">No available courses to enroll in.</h5>
+                    <p class="text-muted">Contact admin to assign courses.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

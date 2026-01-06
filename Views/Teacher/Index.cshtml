@@ -1,0 +1,56 @@
+﻿@using AttendanceSystem.Core.Models
+@{
+    ViewData["Title"] = "Teacher Dashboard";
+}
+
+<div class="container-fluid mt-4">
+    <h2 class="mb-4">
+        <i class="bi bi-mortarboard"></i> Teacher Dashboard
+    </h2>
+    <a href="/Teacher/MyTimetable" class="btn btn-outline-info w-100 mb-2">
+        <i class="bi bi-calendar-week"></i> My Timetable
+    </a>
+    @if (ViewBag.Courses != null && ViewBag.Courses.Count > 0)
+    {
+        <div class="alert alert-info">
+            <i class="bi bi-info-circle"></i> You are assigned to <strong>@ViewBag.Courses.Count courses</strong>.
+        </div>
+
+        <div class="row">
+            @foreach (var course in ViewBag.Courses as List<Course>)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card border-primary h-100">
+                        <div class="card-header bg-primary text-white">
+                            <i class="bi bi-book"></i> @course.Code
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@course.Title</h5>
+                            <p class="text-muted small">Teacher: @course.TeacherEmail</p>
+                            <div class="mt-auto">
+                                <a href="/Teacher/MarkAttendance?courseCode=@course.Code" class="btn btn-outline-primary w-100 mb-2">
+                                    <i class="bi bi-calendar-check"></i> Mark Attendance
+                                </a>
+                                <a href="/Teacher/MyReports?courseCode=@course.Code" class="btn btn-outline-info w-100">
+                                    <i class="bi bi-file-bar-graph"></i> View Reports
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            <i class="bi bi-exclamation-triangle"></i> You are not assigned to any courses yet.
+        </div>
+    }
+
+    <div class="text-end mt-4">
+        <a href="/Home/Logout" class="btn btn-outline-secondary">
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </a>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿@using AttendanceSystem.Core.Models
+@model List<Timetable>
+@{
+    ViewData["Title"] = "My Timetable";
+}
+
+<div class="container-fluid mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="bi bi-calendar-week me-2"></i> My Class Timetable</h2>
+        <a href="/Student/Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Back
+        </a>
+    </div>
+
+    @await Html.PartialAsync("_TimetableView", Model)
+</div>

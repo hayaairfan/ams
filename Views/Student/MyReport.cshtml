@@ -1,0 +1,90 @@
+﻿@using AttendanceSystem.Core.Models
+@model List<AttendanceReport>
+
+@{
+    ViewData["Title"] = "My Attendance Reports";
+}
+
+<div class="container-fluid mt-4">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Student/Index" class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient-primary text-white py-4">
+            <h3 class="mb-0 fw-bold">
+                <i class="bi bi-file-bar-graph me-2"></i> My Attendance Reports
+            </h3>
+        </div>
+
+        <div class="card-body p-4">
+            @if (Model != null && Model.Any())
+            {
+                <div class="alert alert-info d-flex align-items-center mb-4">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <div>Showing attendance for your enrolled courses.</div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Course</th>
+                                <th>Total Classes</th>
+                                <th>Present</th>
+                                <th>Late</th>
+                                <th>Absent</th>
+                                <th>Attendance %</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var r in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="badge bg-primary">@r.CourseCode</span>
+                                    </td>
+                                    <td>@r.TotalClasses</td>
+                                    <td><span class="badge bg-success">@r.Present</span></td>
+                                    <td><span class="badge bg-warning text-dark">@r.Late</span></td>
+                                    <td><span class="badge bg-danger">@r.Absent</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="progress flex-grow-1 me-2" style="height: 10px;">
+                                                <div class="progress-bar bg-primary" style="width: @(r.Percentage)%;"></div>
+                                            </div>
+                                            <span class="fw-bold">@r.Percentage%</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <div class="mb-3">
+                        <i class="bi bi-file-earmark-text fs-1 text-muted"></i>
+                    </div>
+                    <h5 class="text-muted">No attendance reports available</h5>
+                    <p class="text-muted">You may not be enrolled in any courses yet, or attendance hasn't been marked.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #4e73df, #224abe);
+    }
+
+    .fs-1 {
+        font-size: 2.5rem !important;
+    }
+</style>
